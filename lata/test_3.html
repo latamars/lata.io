@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
+		<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+			<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+			<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			header{
+			position: sticky;
+			position: -webkit-sticky;    /* 兼容 -webkit 内核的浏览器 */
+			top: 0.0001px;				/*实现吸顶效果*/
+			z-index: 999;
+			
+			}
+			img{
+				width: 3.125rem;
+				height:3.125rem;
+			}
+			span{
+			color: #E2E3E5;
+				
+			}
+			/* .container{
+				height: 10%;
+				position: absolute;				/* 绝对定位，吸底 */
+				bottom: 0.01px;
+			} */
+
+		</style>
+		<title>团队招募</title>
+	</head>
+	<body style="background-color: #025860">
+		<header>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				<a href="index.html" class="navbar-brand">HOME</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navtop"><span class="navbar-toggler-icon"></span></button>
+				<div id="navtop" class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link" onclick="sub()">首页</a></li>
+					<li class="nav-item"><a href="#" class="nav-link" onclick="sub2()" >加入我们</a></li>
+					<li class="nav-item"><a href="test_3.html" class="nav-link">联系我们</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+		<section style="height: 600px;">
+			
+				<div style="float: left;">
+					<img src="img/zyd.jpg" style="width: 20%;height: 98%;">
+					<img id="ljh" src="img/ljh.jpg" style="width: 60%;height: auto;" >
+					<img src="img/zyd2.jpg" style="width: 10%;height:98%;" >
+				</div>
+			
+			
+			<!-- <div class="container">
+				<div class="row visible-on">
+					<div class="col-xs-6 col-sm-3">
+						<span class="hidden-xs"></span>
+						<span class="visible-xs">
+							<div>
+								<img src="img/ljh3.jpg" style="width: 100%;height: 100%;" >
+							</div>
+							
+						</span>
+					</div>
+					</div>
+					</div> -->
+			
+			
+			
+			
+			<div class="container" style="height: 9%;position: absolute;	bottom: 0.01px;">
+				<div class="row visible-on">
+					<div class="col-xs-6 col-sm-3">
+						<span class="hidden-xs">您也可以在移动端扫码访问</span>
+						<span class="visible-xs">
+							<div >
+								知乎
+							<img src="img/zhihu2.png" >
+							</div>
+							<div>
+								微博
+							<img src="img/weibo2.png" >
+							</div>
+						</span>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<span class="hidden-sm">您也可以通过pad端进行访问</span>
+						<span class="visible-sm">
+							<a href="https://zhuanlan.zhihu.com/p/438574286"><img src="img/zhihu.png" ></a>
+							<a href="https://weibo.com/latamars"><img src="img/weibo.png" ></a>
+							</span>
+					</div>
+					<div class="clearfix visible-xs"></div>
+					<div class="col-xs-6 col-sm-3">
+						
+						<span class="visible-md">
+							<a href="https://zhuanlan.zhihu.com/p/438574286"><img src="img/zhihu.png" ></a>
+							<a href="https://weibo.com/latamars"><img src="img/weibo.png" ></a>
+							</span>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<span class="hidden-lg">您也可以在PC端口对我们进行访问</span>
+						<span class="visible-lg">
+							<a href="https://zhuanlan.zhihu.com/p/438574286"><img src="img/zhihu.png" ></a>
+							<a href="https://weibo.com/latamars"><img src="img/weibo.png" ></a>
+						</span>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<script type="text/javascript">
+		function img(){
+			
+			var img=document.getElementById('ljh');
+			img.onmouseover=function(){			
+			img.src="img/ljh2.jpg";
+			};
+			img.onmouseleave=function(){
+				img.src="img/ljh.jpg";
+			}
+		};
+		img();
+		</script>
+	</body>
+</html>

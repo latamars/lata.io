@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="user-scalable=yes，width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+		<script src="bootstrap-4.5.0-dist/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="bootstrap-4.5.0-dist/js/popper.min.js"></script>
+		<script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+		<title>Welcom !</title>
+		<style type="text/css">
+		*{
+					 margin: 0;
+					 padding: 0;
+		}
+		/* body{
+			background-color: #eaf2fc;
+		} */
+		 a{
+			 text-decoration:none;                          /* 去除超链接下划线 */
+		 }
+		 .all{
+			 margin: 0;
+			 padding: 0;
+			 width: 100%;
+			 height: 100%;
+			 
+		 }
+		 .photo_1{
+			 margin-bottom: 1%;								/* 图片与图片之间间隔 */
+			 height: 30%;	 
+		 }
+		 .logo{
+			width: 100%;
+			 height: 700px; 
+			 text-align: center;
+			 margin-bottom: 1em;
+		 }
+		 .logo img{
+			 
+			 margin: 0 auto;
+		 }
+		 .slogan_1, .slogan_2{
+			 text-align: center;
+			 height: 40%;
+		 }
+		 .slogan_1,.logo{											/* 对字体进行微调 */
+			 background-color: #eaf2fc;
+		 }
+		 .slogan_2{
+			 background-color: #34283c;
+			 height: 50%;
+		 }
+		 span{
+			 margin-bottom: 10px;
+			 height: 10%;
+		 }
+		 .photo_2{
+			 height: 30%;
+		 }
+		 .font_1,.font_2{
+			 font-family: "";
+			 font-size: 40px;
+			 font-weight: bold;
+			 text-align: center;
+		 }
+		 .font_2{
+			 height: 50%;
+			 color: white;
+		 }
+		 .font_3{
+			 color:#fec2eb;
+			 font-size: 25px;
+			 
+		 }
+		 .font_4{
+			 color:#2997ff;
+		 }
+		 .font_5{
+		 			 color:#000000;
+		 			 font-size: 25px;			 
+		 }
+
+		 .row{
+			 text-align: center;
+		 }
+		 .pro_photo{													/* 照片 */
+		 			padding: 0;
+		 			width: 400px;
+		 			height: 380px;
+		 			border-radius: 25px;
+		 			/* margin: 0 auto; */
+					border:3px solid black;
+					border-color: #008000 #000000 #000000 #008000;
+					
+		 }
+		 .bottom{													/* footer界面 */
+			 background-color:#f5f5f7;
+			 font-size: 10px;
+		 }
+		 .tow{											/* 对四张商品product进行排版 */
+			 background-color:cadetblue;									/* ffffff背景颜色 */
+			 height: 1200px;
+			
+		 }
+		.tow_box{															/* 装照片的盒子 */
+			margin:2%;
+			padding: 0;
+			height:550px;
+			width: 540px;
+			float: left;	
+		}
+		.container_pr{										/* container的父元素背景色 */
+			background:#eaf2fc;
+		}
+		
+		
+		 
+		 /* 对最低端页脚div盒子设置宽高 */
+		 .bottom{															
+			 width: 100%;
+			 height: 10%;
+			 margin: 1% 0 0 0;				/* 实现吸附底部 */
+			 overflow: hidden;
+		 }
+		 header{
+			 position: sticky;
+			   position: -webkit-sticky;    /* 兼容 -webkit 内核的浏览器 */
+			   top: 0.0001px;				/*实现吸顶效果*/
+			   z-index: 999;
+
+		 }
+		 a:hover{
+			 text-decoration: none;
+		 }
+		 .pro_photo:hover{
+			 border: 5px solid black;		/* 鼠标悬效果加深 */
+		 }
+		 </style>
+	</head>
+	<body>
+		
+		<header>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+				<a href="index.html" class="navbar-brand">HOME</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navtop"><span class="navbar-toggler-icon"></span></button>
+				<div id="navtop" class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#" class="nav-link" onclick="sub()">首页</a></li>
+					<li class="nav-item"><a href="#" class="nav-link" onclick="sub2()" >加入我们</a></li>
+					<li class="nav-item"><a href="test_3.html" class="nav-link">联系我们</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+		<section>
+		<div class="all">                                               <!-- 大盒子最外层 -->
+			<div class="photo_1">
+				<div class="logo"><img src="img/new2.gif">
+				<br/>
+				<a href="China.html" class="font_4">前往支持国产 ></a>
+				</div>
+				<div class="slogan_1">
+					<span class="font_1">让节日，贫穷每一个人。</span>
+				<br/>
+				<a href="test_2.html"  class="font_4">选购好礼 > </a>
+				</div>
+				<img src="img/3.png" width="100%" height="30%">
+			</div>  												<!--主题背景颜色淡蓝 eaf2fc -->
+			<div class="photo_2">
+				<div class="slogan_2">
+					<span class="font_2">!Phone 13 </span>
+					<br/>
+					<br/>										<!-- 使用br换行解决距离 -->
+					<span class="font_3" >解锁钞能力</span>
+					<br/>
+					<br/>
+					<a href="https://www.apple.com.cn/iphone-13/" class="font_4">进一步了解 > </a>  
+					 <a href="https://www.apple.com.cn/shop/buy-iphone/iphone-13" class="font_4">购买 > </a>
+					</div>
+				<img src="img/iPhone.jpg" width="100%" height="30%">
+			</div>													<!--主题背景颜色酒红 34283c -->
+		</div>	
+			
+			
+			<div class="container_pr">
+				
+			
+			<div class="container">                                   <!-- 拼图的盒子 -->
+				<div class="row" >
+					<div class="col-md-6 col-sm-12"><div><span class="font_1">Mac Book Pro</span><br/>
+					<span class="font_5">笨重身躯</span></div>
+					<img src="img/Mac.png" class="pro_photo"/></div>
+				
+				
+					<div class="col-md-6 col-sm-12" ><div><span class="font_1">iPad mini</span><br/>
+					<span class="font_5">穷²</span></div>
+					<img src="img/ipad.png" class="pro_photo"/></div>
+				</div>
+				
+				<div class="row" >
+					<div class="col-md-6 col-sm-12"><div><span class="font_1">iWATCH</span><br/>
+					<span class="font_5">不如小天才</span></div>
+					<img src="img/watch.png" class="pro_photo"/></div>
+					
+				
+					<div class="col-md-6 col-sm-12"><div><span class="font_1">AirTag</span><br/>
+					<span class="font_5">比你的男朋友，更加靠谱。</span></div>
+					<img  src="img/AirTag.png" class="pro_photo"/></div>
+					</div>
+			</div>			
+	</div>
+	
+		<!-- <audio src="https://freepd.com/music/Awkward%20Apocalyptic%20Pickup.mp3"  autoplay="autoplay" >
+			当前浏览器不支持audio
+		</audio> -->
+	</section>	
+	<footer>
+	<div class="bottom">
+		
+		<p class="footer_text">更多选购方式：<a href="caidan.html" class="font_4" target="_blank">
+		查找你附近的 Apple Store 零售店</a>及<a href="caidan.html" class="font_4" target="_blank">
+		更多门店</a>，作者QQ 271-1257-734
+		</p>
+		<hr/>                                                <!-- 生成一条线分割 -->
+		<p>!Phone © 2021 latamars. 保留恶搞创意。制作人员 | 欧志渊 | 周林园 | 喻森森 </p>
+		<p>鄂·武汉 我在这里写一段文字，它的含义是版权信息12138</p>
+	</div>
+	</footer>
+	
+	</body>
+	<script type="text/javascript">
+		function sub(){
+			alert("这个按钮没用");
+		};
+		function sub2(){
+			alert("这个也没用");
+		};
+	</script>
+</html>
