@@ -1,2 +1,2 @@
 # lata.io
-![Image text](https://raw.github.com/yourName/repositpry/master/yourprojectName/img-folder/test.jpg)
+![Image text](img/ljh3.jpg)
